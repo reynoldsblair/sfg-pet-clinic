@@ -5,7 +5,7 @@ import java.util.Locale;
 /**
  * Created by ed.blair on 4/18/2019.
  */
-public class Pet {
+public class Pet extends BaseEntity{
 
     private PetType petType;
     private Owner owner;

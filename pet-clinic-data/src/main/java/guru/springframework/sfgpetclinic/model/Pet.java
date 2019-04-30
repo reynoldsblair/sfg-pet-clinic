@@ -1,15 +1,24 @@
 package guru.springframework.sfgpetclinic.model;
 
-import java.util.Locale;
+import java.time.LocalDate;
 
 /**
  * Created by ed.blair on 4/18/2019.
  */
 public class Pet extends BaseEntity{
 
+    private String name;
     private PetType petType;
     private Owner owner;
-    private Locale birthdate;
+    private LocalDate birthdate;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public PetType getPetType() {
         return petType;
@@ -27,11 +36,11 @@ public class Pet extends BaseEntity{
         this.owner = owner;
     }
 
-    public Locale getBirthdate() {
+    public LocalDate getBirthdate() {
         return birthdate;
     }
 
-    public void setBirthdate(Locale birthdate) {
+    public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
     }
 }

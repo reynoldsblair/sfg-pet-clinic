@@ -9,7 +9,7 @@ import java.util.Set;
  * Created by ed.blair on 4/18/2019.
  */
 @Entity
-@Table
+@Table(name = "pet")
 public class Pet extends BaseEntity{
 
     @Column(name = "name")
